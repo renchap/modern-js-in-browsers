@@ -26,6 +26,7 @@ But this forced transpilation is not good for developers desiring to ship modern
 
 Things to keep in mind:
 - It seems a bad idea to make build tools import the original source in any cases, as the build tool might not understand it if the dependency is using a veyr modern syntax. For example, if a package is written using experimental ES7 features, it will not be transpiled by Babel. Hence the need for the package to be transpiled to a known and common target (or multiple ones).
+- There have been 2 recent new entries in `package.json`: `jsnext:main` and `module`. They may seem useful to our case at first, but in practice they are not. Like what is described above, they point to an alternate transpilation included in the distributed package, but the only requirement for this version is to be using `import` statements and no `require` or older way of loading files. Most of the time, this alternate transpiled version is the same one as the main entry, except for those `import` statements. It has been created to help optimising published bundles (tree-shaking, …).
 
 ## TODO
 

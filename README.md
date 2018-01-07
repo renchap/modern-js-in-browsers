@@ -4,7 +4,7 @@
 
 ECMAScript/Javascript has been evolving quickly in the last years, with a lot of modern language construct appearing in newer versions. Most of those features are now implemented by the latest versions of web browsers, and each new version brings support for more.
 But when developing a website, you usually want to ensure compatibility with a wide range of browsers, so your code needs to run on the older browser versions you want to support. Usually, this means using ECMAScript 5 (ES5).
-Those old browsers market share is slowly diminishing but will most probably still represent a significant share of users in the coming years, especially in specific markets (Big corps, some continents/countries, …).
+Those old browsers market share is slowly diminishing but will most probably still represent a significant share of users in the coming years, especially in specific markets (big corps, some continents/countries, …).
 
 Nowadays, more and more code is written using a modern ECMAScript implementation (ES6, ES7) to take advantage of the new syntax and features, and is converted (transpiled) to ES5 before being published so it can be ran on most browsers. Polyfills for new functions are also added to the published code. Those are JS implementation of functions that appear in newer versions, and are loaded at runtime if there is no native version available.
 
