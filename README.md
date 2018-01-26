@@ -48,7 +48,7 @@ In summary, it relies on the fact that recent browsers support `<script type="mo
 
 It allows to publish an ES6 (aka ES2015) version that will be loaded by those modern browsers, and an ES5 version loaded by all other browsers. The main drawback of this method is the lack of evolutivity in the future. As it relies on an indirect way to conditionally load a different file depending on modules support, we will not be able to use the same method to, for example, load an ES8 file on browsers supporting the ES8 specification once it is released.
 
-A proper solution would probably involve an extension to the HTML specification and a way to declare in a `<script>` tag what features (APIs, ES version, …) a browser needs to support to load the specified file, and ignore it otherwise.
+Some ideas on how to better solve this problem are described in [browser-side.md](browser-side.md).
 
 ### Generate multiple transpiled versions of the source code
 
